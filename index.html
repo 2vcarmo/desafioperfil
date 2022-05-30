@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Investimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+    <input type="text" name ="nome" placeholder="digite seu nome aqui"><br>
+    <input type="number" name ="idade" placeholder="digite a sua idade aqui"><br>
+    <input type="number" name ="renda" placeholder="digite a sua renda aqui"><br>
+    <p>Você tem formação na área financeira?</p>
+    <input type="radio" name="perfil" value="simsemexp">Sim, sem experiência<br>
+    <input type="radio" name="perfil" value="simcomexp">Sim, com experiência<br>
+    <input type="radio" name="perfil" value="naoexp">Não, mas tenho experiência<br>
+    <input type="radio" name="perfil" value="naocompouca">Não, com pouca experiência<br>
+    <input type="radio" name="perfil" value="naoenaotenho">Não, e não tenho experiência<br>
+    <p>Qual produto você conhece?</p>
+    <input type="radio" name="produto" value="poupanca">Poupança, depósito a prazo<br>
+    <input type="radio" name="produto" value="tesouro">Tesouro direto, renda variável<br>
+    <input type="radio" name="produto" value="produtos">Produtos 1 e 2<br>
+    <input type="radio" name="produto" value="nuncainvestiu">Nunca investiu, mas conheço alguns produtos<br>
+    <input type="radio" name="produto" value="nunca">Nunca investi e não conheço nenhum<br>
+    <button id="simular">Simular</button>
+
+    <div class="result-container" id='resultado'>
+        <div class="result"></div>
+      </div>
+    </div>
+
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
